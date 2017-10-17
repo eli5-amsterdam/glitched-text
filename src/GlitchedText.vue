@@ -52,7 +52,7 @@ $red: #FF0000;
 	position: relative;
 	.glitch {
 	  color: white;
-	  font-size: 50px;
+	  font-size: inherit;
 	  font-weight: inherit;
 	  text-transform: uppercase;
 	  font-family: inherit;
