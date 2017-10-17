@@ -12,5 +12,5 @@ $ npm install @eli5/vue-glitched
 
 ### yarn
 ```
-yarn add @eli5/vue-glitched
+$ yarn add @eli5/vue-glitched
 ```
