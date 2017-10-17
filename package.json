@@ -1,16 +1,32 @@
 {
-  "name": "glitched-text",
-  "version": "1.0.0",
+  "name": "@eli5/vue-glitched",
+  "version": "1.0.1",
   "description": "Vue glitched text component",
   "main": "dist/index.js",
   "author": "Eli5",
   "license": "MIT",
-  "repository": "https://github.com/SemBakkum/glitched-text",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eli5-amsterdam/glitched-text.git"
+  },
   "files": [
     "dist"
   ],
   "devDependencies": {
     "node-sass": "^4.5.2",
     "sass-loader": "^6.0.6"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/eli5-amsterdam/glitched-text/issues"
+  },
+  "homepage": "https://github.com/eli5-amsterdam/glitched-text#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vue",
+    "glitched-text",
+    "glitched",
+    "vue-text"
+  ]
 }
