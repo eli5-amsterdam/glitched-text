@@ -22,3 +22,23 @@ In your main css file add this line of code
 ```
 @import "~@eli5/vue-glitched/dist/client.css";
 ```
+
+## Usage
+
+Start by importing the component.
+
+```
+import GlitchedText from '@eli5/vue-glitched'
+
+export default {
+	components: {
+		GlitchedText
+	}
+}
+```
+
+In your template file
+
+```
+<glitched-text :text="'Glitched text'" :color="'#FFF'" :fontSize="50"></glitched-text>
+```
