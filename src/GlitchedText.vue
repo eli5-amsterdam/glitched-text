@@ -8,6 +8,10 @@ import grained from 'grained'
 export default {
 	name: 'glitched-text',
 	props: {
+		text: {
+			type: [Number, String],
+			default: null
+		},
 		color: {
 			type: [Number, String],
 			default: null

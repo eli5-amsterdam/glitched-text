@@ -5,11 +5,11 @@
   "main": "dist/index.js",
   "author": "Eli5",
   "license": "MIT",
+  "repository": "https://github.com/SemBakkum/glitched-text",
   "files": [
     "dist"
   ],
   "devDependencies": {
-    "grained": "^0.0.2",
     "node-sass": "^4.5.2",
     "sass-loader": "^6.0.6"
   }
