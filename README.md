@@ -27,7 +27,7 @@ In your main css file add this line of code
 
 Start by importing the component.
 
-```
+```javascript
 import GlitchedText from '@eli5/vue-glitched'
 
 export default {
@@ -39,6 +39,6 @@ export default {
 
 In your template file
 
-```
+```html
 <glitched-text :text="'Glitched text'" :color="'#FFF'" :fontSize="50"></glitched-text>
 ```
