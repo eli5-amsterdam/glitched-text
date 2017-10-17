@@ -1,5 +1,7 @@
 <template>
+	<div class="glitch-wrapper" :style="{ height: fontSize + 'px' }">
 		<div class="glitch" :data-text="text" :style="[glitchStyles]" v-html="text"></div>
+	</div>
 </template>
 
 <script>
@@ -45,51 +47,54 @@ export default {
 <style lang="scss">
 $blue: #00FDFF;
 $red: #FF0000;
-.glitch {
-  color: white;
-  font-size: 50px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: Helvetica;
-  margin: 0;
-  z-index: 3;
-  position: absolute;
-  opacity: 1;
-  animation: blink 6s linear infinite;
-  letter-spacing: 5px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 100%;
-  text-align: center;
-  
-  
-  &:before, &:after {
-    display: block;
-    position: absolute;
-    content: attr(data-text);
-    top: 0;
-    left: 0;
-    transform: translate(0,0);
-    height: 100%;
-    width: 100%;
-    overflow: visible;
-  }
-  
-  &:before {
-    text-shadow: -2px 0 $blue;
-    z-index: -1;
-    // background-color: rgba(black, .5);
-    transform: translate(0,0);
-    animation: glitch 6s linear infinite;
-  }
-  &:after {
-    text-shadow: 2px 0 $red;
-    z-index: -2;
-    // background-color: rgba(black, .5);
-    transform: translate(0,0);
-    animation: glitch-2 6s linear infinite;
-  }
+
+.glitch-wrapper {
+	position: relative;
+	.glitch {
+	  color: white;
+	  font-size: 50px;
+	  font-weight: inherit;
+	  text-transform: uppercase;
+	  font-family: inherit;
+	  margin: 0;
+	  z-index: 3;
+	  position: absolute;
+	  opacity: 1;
+	  animation: blink 6s linear infinite;
+	  letter-spacing: 5px;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+	  width: 100%;
+	  
+	  
+	  &:before, &:after {
+	    display: block;
+	    position: absolute;
+	    content: attr(data-text);
+	    top: 0;
+	    left: 0;
+	    transform: translate(0,0);
+	    height: 100%;
+	    width: 100%;
+	    overflow: visible;
+	  }
+	  
+	  &:before {
+	    text-shadow: -2px 0 $blue;
+	    z-index: -1;
+	    // background-color: rgba(black, .5);
+	    transform: translate(0,0);
+	    animation: glitch 6s linear infinite;
+	  }
+	  &:after {
+	    text-shadow: 2px 0 $red;
+	    z-index: -2;
+	    // background-color: rgba(black, .5);
+	    transform: translate(0,0);
+	    animation: glitch-2 6s linear infinite;
+	  }
+	}
 }
 
 @keyframes glitch {
