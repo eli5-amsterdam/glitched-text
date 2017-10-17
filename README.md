@@ -14,3 +14,11 @@ $ npm install @eli5/vue-glitched
 ```
 $ yarn add @eli5/vue-glitched
 ```
+
+### CSS
+
+In your main css file add this line of code
+
+```
+@import "~@eli5/vue-glitched/dist/client.css";
+```

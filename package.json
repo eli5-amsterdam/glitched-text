@@ -1,6 +1,6 @@
 {
   "name": "@eli5/vue-glitched",
-  "version": "1.5",
+  "version": "1.0.5",
   "description": "Vue glitched text component",
   "main": "dist/index.js",
   "author": "Eli5",
